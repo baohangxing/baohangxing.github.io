@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            name="viewport" />
+        <link
+            href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css"
+            rel="stylesheet" />
+
+        <title>404 NOT FOUND</title>
+
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <meta name="generator" content="Hexo 5.4.0"
+    /></head>
+
+    <body>
+        <div class="error-container">
+            <p class="not-found">404 NOT FOUND</p>
+        </div>
+        <style>
+            .error-container {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .not-found {
+                font-size: 3vw;
+                font-weight: 600;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .shake-horizontal {
+                -webkit-animation: shake-horizontal 1s
+                    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+                animation: shake-horizontal 1s
+                    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+            }
+
+            @-webkit-keyframes shake-horizontal {
+                0%,
+                100% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                10%,
+                30%,
+                50%,
+                70% {
+                    -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
+                }
+                20%,
+                40%,
+                60% {
+                    -webkit-transform: translateX(10px);
+                    transform: translateX(10px);
+                }
+                80% {
+                    -webkit-transform: translateX(8px);
+                    transform: translateX(8px);
+                }
+                90% {
+                    -webkit-transform: translateX(-8px);
+                    transform: translateX(-8px);
+                }
+            }
+            @keyframes shake-horizontal {
+                0%,
+                100% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                10%,
+                30%,
+                50%,
+                70% {
+                    -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
+                }
+                20%,
+                40%,
+                60% {
+                    -webkit-transform: translateX(10px);
+                    transform: translateX(10px);
+                }
+                80% {
+                    -webkit-transform: translateX(8px);
+                    transform: translateX(8px);
+                }
+                90% {
+                    -webkit-transform: translateX(-8px);
+                    transform: translateX(-8px);
+                }
+            }
+        </style>
+        <script>
+            function play() {
+                document.querySelector('.not-found').className = 'not-found';
+                window.requestAnimationFrame(function (time) {
+                    window.requestAnimationFrame(function (time) {
+                        document.querySelector('.not-found').className =
+                            'not-found shake-horizontal';
+                    });
+                });
+            }
+            document
+                .querySelector('.not-found')
+                .addEventListener('click', play, false);
+        </script>
+    </body>
+</html>

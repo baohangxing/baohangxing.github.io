@@ -1,0 +1,148 @@
+html {
+  font-family: 'Comic Sans MS', freeHandWriteFont, cursive, LiSu, sans-serif;
+}
+* {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+body {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  margin: 2em 0 1em 0;
+  display: flex;
+  padding: 0 20px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.header .blog-title .logo {
+  color: #d4d4d4;
+  font-size: 2em;
+  text-decoration: none;
+}
+.header .menu {
+  margin: 0;
+  padding: 0;
+}
+.header .menu .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header .menu .menu-item-link {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+.header .menu .menu-item-link:hover {
+  color: #368ccb;
+}
+.post {
+  margin: 1em auto;
+  padding: 30px 50px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.posts .post:first-child {
+  margin-top: 0;
+}
+.posts .post-title {
+  font-size: 1.5em;
+}
+.posts .post-title .post-title-link {
+  text-decoration: none;
+}
+.posts .post-content a {
+  color: #368ccb;
+  text-decoration: none;
+}
+blockquote {
+  padding: 0.5rem 1rem;
+  border-left: 8px solid #81bef7;
+  background-color: #222526;
+  border-radius: 5px;
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 40px;
+}
+blockquote > * {
+  background-color: #222526;
+}
+a:hover {
+  color: #368ccb;
+}
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  display: block;
+}
+figure table {
+  display: block;
+  border-color: #222526;
+  margin: 0 10px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+figure * {
+  background-color: #222526 !important;
+  font-family: Consolas, 'Courier New', monospace;
+  color: #ac9178;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+figure * .gutter {
+  display: none;
+}
+img {
+  max-width: 70vw;
+}
+.main {
+  padding: 15px;
+}
+.archive {
+  margin: 1em auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.archive .post-archive {
+  list-style: none;
+  padding: 0;
+}
+.archive .post-archive .post-item {
+  margin: 5px 0;
+}
+.archive .post-archive .post-item .post-date {
+  display: inline-block;
+  margin-right: 10px;
+}
+.archive .post-archive .post-item .post-title {
+  text-decoration: none;
+}
+.page-nav {
+  padding: 0.5em 0;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+}
+.page-nav .prev,
+.page-nav .next,
+.page-nav .page-number {
+  padding: 0.1em 0.5em;
+}
+.page-nav .prev {
+  float: left;
+}
+.page-nav .next {
+  float: right;
+}
+.page-nav a {
+  text-decoration: none;
+}
