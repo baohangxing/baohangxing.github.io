@@ -7,7 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans SC"', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: [
+          "ChunTian",
+          '"Noto Sans SC"',
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
       },
     },
