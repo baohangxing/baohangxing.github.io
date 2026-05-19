@@ -2,6 +2,7 @@ import {useParams, Link} from "react-router-dom";
 import {ArrowLeft, Clock, MessageCircle, ExternalLink} from "lucide-react";
 import {useIssue} from "@/hooks/useIssue";
 import PostContent from "@/components/Blog/PostContent";
+import TableOfContents from "@/components/Blog/TableOfContents";
 import GiscusComments from "@/components/Comments/GiscusComments";
 import ReadingProgress from "@/components/UI/ReadingProgress";
 
@@ -51,6 +52,7 @@ export default function BlogPost() {
   return (
     <>
       <ReadingProgress />
+      <TableOfContents content={issue.body ?? ""} />
       <article className="max-w-3xl mx-auto px-4 py-10">
         <Link
           to="/blog"

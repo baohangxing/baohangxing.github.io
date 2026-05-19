@@ -9,7 +9,7 @@ export default function PostContent({content}: PostContentProps) {
   const {theme} = useTheme();
 
   return (
-    <div className="max-w-none">
+    <div id="post-content" className="max-w-none">
       <MarkdownPreview
         source={content}
         wrapperElement={{
@@ -18,8 +18,6 @@ export default function PostContent({content}: PostContentProps) {
         style={{
           backgroundColor: "transparent",
           color: "inherit",
-          fontFamily:
-            '"ChunTian", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif',
         }}
       />
     </div>
