@@ -2,12 +2,11 @@ import {Link, NavLink} from "react-router-dom";
 import {Sun, Moon, Menu, X} from "lucide-react";
 import {useState} from "react";
 import {useTheme} from "@/context/ThemeContext";
-import {SITE} from "@/config/site";
+import {SITE} from "../../config/site";
 
 const navLinks = [
   {to: "/", label: "首页"},
   {to: "/blog", label: "博客"},
-  {to: "/about", label: "关于"},
 ];
 
 export default function Navbar() {
@@ -17,10 +16,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
       <nav className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link to="/" className="font-bold text-lg tracking-tight">
-          {SITE.title}
-        </Link>
-
+        <Link to="/">{SITE.description}</Link>
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-6 text-sm">
           {navLinks.map(({to, label}) => (

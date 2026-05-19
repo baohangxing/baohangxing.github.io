@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import {useIssues} from "@/hooks/useIssues";
 import PostCard from "@/components/Blog/PostCard";
-import {SITE} from "@/config/site";
 import {ArrowRight} from "lucide-react";
 
 export default function Home() {
@@ -9,14 +8,6 @@ export default function Home() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      {/* Hero */}
-      <section className="mb-14 text-center">
-        <h1 className="text-4xl font-bold mb-4">{SITE.title}</h1>
-        <p className="text-lg text-gray-500 dark:text-gray-400">
-          {SITE.description}
-        </p>
-      </section>
-
       {/* Recent posts */}
       <section>
         <div className="flex items-center justify-between mb-6">
